@@ -2,8 +2,8 @@
     <header class="header">
         <Transition name="header-anim" mode="out-in">
             <div class="header-notes" v-if="(header && !showModal) || (header && showModal && !smallScreen)">
-                <button @click="changeLang" v-if="lang == 'uz'">UZ</button>
-                <button @click="changeLang" v-else>RU</button>
+                <button @click="changeLang" v-if="lang == 'ru'">RU</button>
+                <button @click="changeLang" v-else>UZ</button>
                 <h1>{{words.appbartitle[lang]}}</h1>
                 <button @click="header = false"><img src="@/assets/img/search.svg" alt=""></button>
             </div> 
